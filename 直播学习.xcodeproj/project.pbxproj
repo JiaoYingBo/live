@@ -8,20 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
-		0EF39FE61F738E9C0066A092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE51F738E9C0066A092 /* ViewController.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
 		0EF39FEE1F738E9C0066A092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEC1F738E9C0066A092 /* LaunchScreen.storyboard */; };
 		0EF39FF91F7394100066A092 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FF61F7394100066A092 /* QHNormalEmotionSort.plist */; };
 		0EF39FFA1F7394100066A092 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FF71F7394100066A092 /* QHSohuGifSort.plist */; };
 		0EF39FFB1F7394100066A092 /* types.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FF81F7394100066A092 /* types.plist */; };
+		0EF3A0001F739B4C0066A092 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FFF1F739B4C0066A092 /* MainViewController.swift */; };
+		0EF3A0021F739D520066A092 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A0011F739D520066A092 /* BaseNavigationController.swift */; };
+		0EF3A0051F73A2AB0066A092 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A0041F73A2AB0066A092 /* BaseViewController.swift */; };
+		0EF3A00A1F73A5680066A092 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A0091F73A5680066A092 /* HomeViewController.swift */; };
+		0EF3A00E1F73A79C0066A092 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A00D1F73A79C0066A092 /* MineViewController.swift */; };
+		0EF3A0141F73AAC80066A092 /* DisCoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A0131F73AAC80066A092 /* DisCoverViewController.swift */; };
+		0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3A0151F73AAD10066A092 /* RankViewController.swift */; };
 		79365320A7A1E29510B3E2CF /* Pods_____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B105359B4AF5FCC95DD537AC /* Pods_____.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0EF39FE51F738E9C0066A092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EF39FEA1F738E9C0066A092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EF39FED1F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -29,6 +34,13 @@
 		0EF39FF61F7394100066A092 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
 		0EF39FF71F7394100066A092 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
 		0EF39FF81F7394100066A092 /* types.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = types.plist; sourceTree = "<group>"; };
+		0EF39FFF1F739B4C0066A092 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		0EF3A0011F739D520066A092 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		0EF3A0041F73A2AB0066A092 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		0EF3A0091F73A5680066A092 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0EF3A00D1F73A79C0066A092 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		0EF3A0131F73AAC80066A092 /* DisCoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisCoverViewController.swift; sourceTree = "<group>"; };
+		0EF3A0151F73AAD10066A092 /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
 		23F0844DE3F27A58D0FDC9B9 /* Pods-直播学习.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-直播学习.debug.xcconfig"; path = "Pods/Target Support Files/Pods-直播学习/Pods-直播学习.debug.xcconfig"; sourceTree = "<group>"; };
 		2779593488194775C06C1FCF /* Pods-直播学习.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-直播学习.release.xcconfig"; path = "Pods/Target Support Files/Pods-直播学习/Pods-直播学习.release.xcconfig"; sourceTree = "<group>"; };
 		B105359B4AF5FCC95DD537AC /* Pods_____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +82,6 @@
 				0EF39FF51F7394050066A092 /* Resources */,
 				0EF39FFC1F7394260066A092 /* Classes */,
 				0EF39FE31F738E9C0066A092 /* AppDelegate.swift */,
-				0EF39FE51F738E9C0066A092 /* ViewController.swift */,
 				0EF39FE71F738E9C0066A092 /* Main.storyboard */,
 				0EF39FEA1F738E9C0066A092 /* Assets.xcassets */,
 				0EF39FEC1F738E9C0066A092 /* LaunchScreen.storyboard */,
@@ -92,8 +103,95 @@
 		0EF39FFC1F7394260066A092 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0EF39FFD1F73992D0066A092 /* Main */,
+				0EF3A0031F73A2850066A092 /* Home */,
+				0EF3A00F1F73AA740066A092 /* Rank */,
+				0EF3A0101F73AA7A0066A092 /* Discover */,
+				0EF3A00B1F73A59A0066A092 /* Mine */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0EF39FFD1F73992D0066A092 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0EF39FFE1F739B3F0066A092 /* Controller */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0EF39FFE1F739B3F0066A092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF39FFF1F739B4C0066A092 /* MainViewController.swift */,
+				0EF3A0041F73A2AB0066A092 /* BaseViewController.swift */,
+				0EF3A0011F739D520066A092 /* BaseNavigationController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF3A0031F73A2850066A092 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0081F73A5680066A092 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0EF3A0081F73A5680066A092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0091F73A5680066A092 /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF3A00B1F73A59A0066A092 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A00C1F73A70C0066A092 /* Controller */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		0EF3A00C1F73A70C0066A092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A00D1F73A79C0066A092 /* MineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF3A00F1F73AA740066A092 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0121F73AA9E0066A092 /* Controller */,
+			);
+			path = Rank;
+			sourceTree = "<group>";
+		};
+		0EF3A0101F73AA7A0066A092 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0111F73AA8F0066A092 /* Controller */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		0EF3A0111F73AA8F0066A092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0131F73AAC80066A092 /* DisCoverViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0EF3A0121F73AA9E0066A092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EF3A0151F73AAD10066A092 /* RankViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		6D78FC93483A6E32CEA51297 /* Pods */ = {
@@ -239,8 +337,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EF39FE61F738E9C0066A092 /* ViewController.swift in Sources */,
+				0EF3A00A1F73A5680066A092 /* HomeViewController.swift in Sources */,
+				0EF3A0001F739B4C0066A092 /* MainViewController.swift in Sources */,
+				0EF3A0051F73A2AB0066A092 /* BaseViewController.swift in Sources */,
+				0EF3A0141F73AAC80066A092 /* DisCoverViewController.swift in Sources */,
 				0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */,
+				0EF3A0021F739D520066A092 /* BaseNavigationController.swift in Sources */,
+				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
+				0EF3A00E1F73A79C0066A092 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

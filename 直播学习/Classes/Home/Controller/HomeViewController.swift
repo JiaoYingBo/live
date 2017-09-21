@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeViewController.swift
 //  直播学习
 //
 //  Created by 焦英博 on 2017/9/21.
@@ -8,11 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-
