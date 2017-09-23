@@ -35,7 +35,7 @@ class STTitleStyle {
     var isShowCover: Bool = false
     // 遮盖背景颜色
     var coverBgColor: UIColor = UIColor.lightGray
-    // 文字&遮盖间隙
+    // 文字遮盖间隙
     var coverMargin: CGFloat = 5
     // 遮盖的高度
     var coverH: CGFloat = 25
