@@ -9,5 +9,13 @@
 import UIKit
 
 class STPageCollectionViewLayout: UICollectionViewFlowLayout {
+    var cols: Int = 4
+    var rows: Int = 2
+    
+    fileprivate lazy var cellAttrs: [UICollectionViewLayoutAttributes] = [UICollectionViewLayoutAttributes]()
+    fileprivate lazy var maxWidth: CGFloat = 0
+}
 
+extension STPageCollectionViewLayout {
+    
 }

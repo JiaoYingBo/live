@@ -223,9 +223,9 @@
 			children = (
 				0EF3A01A1F73BBDA0066A092 /* STTitleStyle.swift */,
 				0EF3A01F1F73C8840066A092 /* STTitleView.swift */,
+				0EE2E0871F7661E60048756D /* STContentView.swift */,
 				0EE2E0831F76619A0048756D /* STPageCollectionViewLayout.swift */,
 				0EE2E0851F7661CF0048756D /* STPageCollectionView.swift */,
-				0EE2E0871F7661E60048756D /* STContentView.swift */,
 				0EE2E0891F7661F90048756D /* STPageView.swift */,
 			);
 			path = STPageView;
