@@ -20,7 +20,7 @@ class HomeViewController: BaseViewController {
 extension HomeViewController {
     fileprivate func setupUI() {
         setupNavigationBar()
-        
+        setupContentView()
     }
     
     fileprivate func setupNavigationBar() {

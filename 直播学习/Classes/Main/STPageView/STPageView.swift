@@ -9,8 +9,7 @@
 import UIKit
 
 class STPageView: UIView {
-
-    // 定义属性
+    // 私有属性
     fileprivate var titles : [String]!
     fileprivate var style : STTitleStyle!
     fileprivate var childVcs : [UIViewController]!

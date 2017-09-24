@@ -55,7 +55,7 @@ class STTitleView: UIView {
     
     // 颜色
     fileprivate lazy var normalColorRGB: (r: CGFloat, g: CGFloat, b:CGFloat) = self.getRGBWithColor(self.style.normalColor)
-    fileprivate lazy var selectedColorRGB: (r: CGFloat, g: CGFloat, b:CGFloat) = self.getRGBWithColor(self.style.normalColor)
+    fileprivate lazy var selectedColorRGB: (r: CGFloat, g: CGFloat, b:CGFloat) = self.getRGBWithColor(self.style.selectedColor)
     
     // MARK: 自定义构造函数
     init(frame: CGRect, titles: [String], style: STTitleStyle) {
@@ -238,7 +238,7 @@ extension STTitleView {
         sourceLabel.textColor = UIColor(r: selectedColorRGB.0 - colorDelta.0 * progress, g: selectedColorRGB.1 - colorDelta.1 * progress, b: selectedColorRGB.2 - colorDelta.2 * progress)
         
         targetLabel.textColor = UIColor(r: normalColorRGB.0 + colorDelta.0 * progress, g: normalColorRGB.1 + colorDelta.1 * progress, b: normalColorRGB.2 + colorDelta.2 * progress)
-        
+                
         // 记录最新的index
         currentIndex = targetIndex
         

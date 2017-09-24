@@ -1,14 +1,14 @@
 //
-//  DisCoverViewController.swift
+//  DiscoverViewController.swift
 //  直播学习
 //
-//  Created by 焦英博 on 2017/9/21.
+//  Created by 焦英博 on 2017/9/24.
 //  Copyright © 2017年 jyb. All rights reserved.
 //
 
 import UIKit
 
-class DisCoverViewController: BaseViewController {
+class DiscoverViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -14,8 +14,8 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
 
         addChildVC(vcName: "HomeViewController", title: "直播", imageName: "live")
-        addChildVC(vcName: "HomeViewController", title: "排行", imageName: "ranking")
-        addChildVC(vcName: "MineViewController", title: "发现", imageName: "found")
+        addChildVC(vcName: "RankViewController", title: "排行", imageName: "ranking")
+        addChildVC(vcName: "DiscoverViewController", title: "发现", imageName: "found")
         addChildVC(vcName: "MineViewController", title: "我的", imageName: "mine")
     }
 
