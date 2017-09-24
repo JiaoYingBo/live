@@ -18,6 +18,10 @@
 		0EE2E0B01F779F010048756D /* STTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0AA1F779F010048756D /* STTitleView.swift */; };
 		0EE2E0B11F779F010048756D /* STPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0AB1F779F010048756D /* STPageCollectionView.swift */; };
 		0EE2E0B21F779F010048756D /* STContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0AC1F779F010048756D /* STContentView.swift */; };
+		0EE2E0B51F77A3FF0048756D /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0B41F77A3FF0048756D /* WaterfallLayout.swift */; };
+		0EE2E0B71F77A7ED0048756D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0B61F77A7ED0048756D /* HomeViewModel.swift */; };
+		0EE2E0B91F77A8140048756D /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0B81F77A8140048756D /* AnchorModel.swift */; };
+		0EE2E0BC1F77A9080048756D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0BB1F77A9080048756D /* NetworkTools.swift */; };
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
@@ -47,6 +51,10 @@
 		0EE2E0AA1F779F010048756D /* STTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTitleView.swift; sourceTree = "<group>"; };
 		0EE2E0AB1F779F010048756D /* STPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPageCollectionView.swift; sourceTree = "<group>"; };
 		0EE2E0AC1F779F010048756D /* STContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STContentView.swift; sourceTree = "<group>"; };
+		0EE2E0B41F77A3FF0048756D /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		0EE2E0B61F77A7ED0048756D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0EE2E0B81F77A8140048756D /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
+		0EE2E0BB1F77A9080048756D /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -84,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE2E08E1F775D490048756D /* HomeType.swift */,
+				0EE2E0B81F77A8140048756D /* AnchorModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +119,23 @@
 				0EE2E0951F775FB40048756D /* Const.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		0EE2E0B31F77A3E70048756D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0B41F77A3FF0048756D /* WaterfallLayout.swift */,
+				0EE2E0B61F77A7ED0048756D /* HomeViewModel.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		0EE2E0BA1F77A8E40048756D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0BB1F77A9080048756D /* NetworkTools.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		0EF39FD71F738E9C0066A092 = {
@@ -169,6 +195,7 @@
 		0EF39FFD1F73992D0066A092 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E0BA1F77A8E40048756D /* Tools */,
 				0EE2E0941F775FA80048756D /* Common */,
 				0EE2E0901F775D860048756D /* Base */,
 				0EF3A01C1F73BD330066A092 /* Extension */,
@@ -191,6 +218,7 @@
 		0EF3A0031F73A2850066A092 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E0B31F77A3E70048756D /* Other */,
 				0EE2E08D1F775D3A0048756D /* Model */,
 				0EF3A0081F73A5680066A092 /* Controller */,
 				0EF3A0171F73BB440066A092 /* View */,
@@ -430,10 +458,13 @@
 				0EE2E0961F775FB40048756D /* Const.swift in Sources */,
 				0EF3A00A1F73A5680066A092 /* HomeViewController.swift in Sources */,
 				0EF3A0001F739B4C0066A092 /* MainViewController.swift in Sources */,
+				0EE2E0B91F77A8140048756D /* AnchorModel.swift in Sources */,
 				0EF3A0051F73A2AB0066A092 /* BaseViewController.swift in Sources */,
 				0EE2E0B21F779F010048756D /* STContentView.swift in Sources */,
 				0EE2E0B01F779F010048756D /* STTitleView.swift in Sources */,
 				0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */,
+				0EE2E0B51F77A3FF0048756D /* WaterfallLayout.swift in Sources */,
+				0EE2E0BC1F77A9080048756D /* NetworkTools.swift in Sources */,
 				0EF3A0021F739D520066A092 /* BaseNavigationController.swift in Sources */,
 				0EE2E0AF1F779F010048756D /* STTitleStyle.swift in Sources */,
 				0EE2E0981F779D830048756D /* DiscoverViewController.swift in Sources */,
@@ -441,6 +472,7 @@
 				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
 				0EE2E0B11F779F010048756D /* STPageCollectionView.swift in Sources */,
 				0EE2E0AE1F779F010048756D /* STPageView.swift in Sources */,
+				0EE2E0B71F77A7ED0048756D /* HomeViewModel.swift in Sources */,
 				0EE2E0AD1F779F010048756D /* STPageCollectionViewLayout.swift in Sources */,
 				0EF3A00E1F73A79C0066A092 /* MineViewController.swift in Sources */,
 				0EF3A01E1F73BD5C0066A092 /* UIColor+Extension.swift in Sources */,
@@ -511,7 +543,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -555,7 +587,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -569,7 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "直播学习/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jyb.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -583,7 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "直播学习/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jyb.----";
 				PRODUCT_NAME = "$(TARGET_NAME)";

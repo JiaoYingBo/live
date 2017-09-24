@@ -8,29 +8,72 @@
 
 import UIKit
 
+private let kEdgeMargin: CGFloat = 8
+private let kAnchorCellID = "kAnchorCellID"
+
 class AnchorViewController: UIViewController {
 
     var homeType: HomeType!
     
+    // 私有属性
+    fileprivate lazy var homeVM: HomeViewModel = HomeViewModel()
+    fileprivate lazy var collectionView: UICollectionView = {
+        let layout = WaterfallLayout()
+        layout.sectionInset = UIEdgeInsets(top: kEdgeMargin, left: kEdgeMargin, bottom: kEdgeMargin, right: kEdgeMargin)
+        layout.minimumLineSpacing = kEdgeMargin
+        layout.minimumInteritemSpacing = kEdgeMargin
+        layout.dataSource = self
+        
+        // 下面各种不提示，玩蛋？
+        let collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        collectionView.dataSource = self
+        collectionView.delegate = self
+        collectionView.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: kAnchorCellID)
+        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        collectionView.backgroundColor = UIColor.white
+        
+        return collectionView
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupUI()
+        loadData(index: 0)
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+//MARK: 设置UI
+extension AnchorViewController {
+    fileprivate func setupUI() {
+        view.addSubview(collectionView)
+    }
+}
+
+//MARK: 网络请求
+extension AnchorViewController {
+    fileprivate func loadData(index: Int) {
+        homeVM.loadHomeData(type: homeType, index: index) { 
+            self.collectionView.reloadData()
+        }
+    }
+}
+
+extension AnchorViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return homeVM.anchorModels.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = UICollectionViewCell()
+        
+        return cell
     }
-    */
+}
 
+extension AnchorViewController: UICollectionViewDelegate {
+    
+}
+
+extension AnchorViewController: WaterfallLayoutDataSource {
+    
 }
