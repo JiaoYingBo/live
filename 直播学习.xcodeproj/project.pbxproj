@@ -11,6 +11,10 @@
 		0EE2E0861F7661CF0048756D /* STPageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0851F7661CF0048756D /* STPageCollectionView.swift */; };
 		0EE2E0881F7661E60048756D /* STContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0871F7661E60048756D /* STContentView.swift */; };
 		0EE2E08A1F7661F90048756D /* STPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0891F7661F90048756D /* STPageView.swift */; };
+		0EE2E08C1F7759B10048756D /* AnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E08B1F7759B10048756D /* AnchorViewController.swift */; };
+		0EE2E08F1F775D490048756D /* HomeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E08E1F775D490048756D /* HomeType.swift */; };
+		0EE2E0931F775DA00048756D /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0921F775DA00048756D /* BaseModel.swift */; };
+		0EE2E0961F775FB40048756D /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0951F775FB40048756D /* Const.swift */; };
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 		0EE2E0851F7661CF0048756D /* STPageCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPageCollectionView.swift; sourceTree = "<group>"; };
 		0EE2E0871F7661E60048756D /* STContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STContentView.swift; sourceTree = "<group>"; };
 		0EE2E0891F7661F90048756D /* STPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STPageView.swift; sourceTree = "<group>"; };
+		0EE2E08B1F7759B10048756D /* AnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorViewController.swift; sourceTree = "<group>"; };
+		0EE2E08E1F775D490048756D /* HomeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeType.swift; sourceTree = "<group>"; };
+		0EE2E0921F775DA00048756D /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		0EE2E0951F775FB40048756D /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,6 +80,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EE2E08D1F775D3A0048756D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E08E1F775D490048756D /* HomeType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EE2E0901F775D860048756D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0911F775D950048756D /* Model */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0EE2E0911F775D950048756D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0921F775DA00048756D /* BaseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EE2E0941F775FA80048756D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0951F775FB40048756D /* Const.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		0EF39FD71F738E9C0066A092 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +169,8 @@
 		0EF39FFD1F73992D0066A092 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E0941F775FA80048756D /* Common */,
+				0EE2E0901F775D860048756D /* Base */,
 				0EF3A01C1F73BD330066A092 /* Extension */,
 				0EF3A0191F73BBB00066A092 /* STPageView */,
 				0EF39FFE1F739B3F0066A092 /* Controller */,
@@ -149,6 +191,7 @@
 		0EF3A0031F73A2850066A092 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E08D1F775D3A0048756D /* Model */,
 				0EF3A0081F73A5680066A092 /* Controller */,
 				0EF3A0171F73BB440066A092 /* View */,
 			);
@@ -159,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF3A0091F73A5680066A092 /* HomeViewController.swift */,
+				0EE2E08B1F7759B10048756D /* AnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,9 +268,9 @@
 				0EF3A01A1F73BBDA0066A092 /* STTitleStyle.swift */,
 				0EF3A01F1F73C8840066A092 /* STTitleView.swift */,
 				0EE2E0871F7661E60048756D /* STContentView.swift */,
+				0EE2E0891F7661F90048756D /* STPageView.swift */,
 				0EE2E0831F76619A0048756D /* STPageCollectionViewLayout.swift */,
 				0EE2E0851F7661CF0048756D /* STPageCollectionView.swift */,
-				0EE2E0891F7661F90048756D /* STPageView.swift */,
 			);
 			path = STPageView;
 			sourceTree = "<group>";
@@ -382,6 +426,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EE2E0931F775DA00048756D /* BaseModel.swift in Sources */,
+				0EE2E0961F775FB40048756D /* Const.swift in Sources */,
 				0EF3A00A1F73A5680066A092 /* HomeViewController.swift in Sources */,
 				0EF3A0001F739B4C0066A092 /* MainViewController.swift in Sources */,
 				0EF3A0051F73A2AB0066A092 /* BaseViewController.swift in Sources */,
@@ -389,6 +435,7 @@
 				0EE2E0861F7661CF0048756D /* STPageCollectionView.swift in Sources */,
 				0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */,
 				0EF3A0021F739D520066A092 /* BaseNavigationController.swift in Sources */,
+				0EE2E08F1F775D490048756D /* HomeType.swift in Sources */,
 				0EF3A0201F73C8840066A092 /* STTitleView.swift in Sources */,
 				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
 				0EE2E0841F76619A0048756D /* STPageCollectionViewLayout.swift in Sources */,
@@ -397,6 +444,7 @@
 				0EF3A01B1F73BBDA0066A092 /* STTitleStyle.swift in Sources */,
 				0EF3A01E1F73BD5C0066A092 /* UIColor+Extension.swift in Sources */,
 				0EE2E0881F7661E60048756D /* STContentView.swift in Sources */,
+				0EE2E08C1F7759B10048756D /* AnchorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
