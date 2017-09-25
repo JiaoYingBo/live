@@ -31,7 +31,6 @@ class AnchorViewController: UIViewController {
         collectionView.register(UINib(nibName: "HomeViewCell", bundle: nil), forCellWithReuseIdentifier: kAnchorCellID)
         collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         collectionView.backgroundColor = UIColor.white
-        
         return collectionView
     }()
     
@@ -64,16 +63,26 @@ extension AnchorViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = UICollectionViewCell()
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kAnchorCellID, for: indexPath) as! HomeViewCell
+        
+        cell.anchorModel = homeVM.anchorModels[indexPath.item]
+        
+        if indexPath.item == homeVM.anchorModels.count - 1 {
+            loadData(index: homeVM.anchorModels.count)
+        }
         
         return cell
     }
 }
 
 extension AnchorViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(indexPath.item)")
+    }
 }
 
 extension AnchorViewController: WaterfallLayoutDataSource {
-    
+    func waterfallLayout(_ layout: WaterfallLayout, indexPath: IndexPath) -> CGFloat {
+        return indexPath.item % 2 == 0 ? kScreenW * 2 / 3 : kScreenW * 0.5
+    }
 }

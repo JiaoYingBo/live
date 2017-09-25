@@ -22,6 +22,9 @@
 		0EE2E0B71F77A7ED0048756D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0B61F77A7ED0048756D /* HomeViewModel.swift */; };
 		0EE2E0B91F77A8140048756D /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0B81F77A8140048756D /* AnchorModel.swift */; };
 		0EE2E0BC1F77A9080048756D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0BB1F77A9080048756D /* NetworkTools.swift */; };
+		0EE2E0C01F793F580048756D /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0BF1F793F580048756D /* KingfisherExtension.swift */; };
+		0EE2E0C31F7940D60048756D /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0C11F7940D60048756D /* HomeViewCell.swift */; };
+		0EE2E0C41F7940D60048756D /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE2E0C21F7940D60048756D /* HomeViewCell.xib */; };
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
@@ -55,6 +58,9 @@
 		0EE2E0B61F77A7ED0048756D /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0EE2E0B81F77A8140048756D /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		0EE2E0BB1F77A9080048756D /* NetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		0EE2E0BF1F793F580048756D /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
+		0EE2E0C11F7940D60048756D /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
+		0EE2E0C21F7940D60048756D /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -134,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				0EE2E0BB1F77A9080048756D /* NetworkTools.swift */,
+				0EE2E0BF1F793F580048756D /* KingfisherExtension.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -286,6 +293,8 @@
 		0EF3A0171F73BB440066A092 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E0C11F7940D60048756D /* HomeViewCell.swift */,
+				0EE2E0C21F7940D60048756D /* HomeViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -392,6 +401,7 @@
 			files = (
 				0EF39FFB1F7394100066A092 /* types.plist in Resources */,
 				0EF39FF91F7394100066A092 /* QHNormalEmotionSort.plist in Resources */,
+				0EE2E0C41F7940D60048756D /* HomeViewCell.xib in Resources */,
 				0EF39FEE1F738E9C0066A092 /* LaunchScreen.storyboard in Resources */,
 				0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */,
 				0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */,
@@ -457,6 +467,7 @@
 				0EE2E0931F775DA00048756D /* BaseModel.swift in Sources */,
 				0EE2E0961F775FB40048756D /* Const.swift in Sources */,
 				0EF3A00A1F73A5680066A092 /* HomeViewController.swift in Sources */,
+				0EE2E0C01F793F580048756D /* KingfisherExtension.swift in Sources */,
 				0EF3A0001F739B4C0066A092 /* MainViewController.swift in Sources */,
 				0EE2E0B91F77A8140048756D /* AnchorModel.swift in Sources */,
 				0EF3A0051F73A2AB0066A092 /* BaseViewController.swift in Sources */,
@@ -470,6 +481,7 @@
 				0EE2E0981F779D830048756D /* DiscoverViewController.swift in Sources */,
 				0EE2E08F1F775D490048756D /* HomeType.swift in Sources */,
 				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
+				0EE2E0C31F7940D60048756D /* HomeViewCell.swift in Sources */,
 				0EE2E0B11F779F010048756D /* STPageCollectionView.swift in Sources */,
 				0EE2E0AE1F779F010048756D /* STPageView.swift in Sources */,
 				0EE2E0B71F77A7ED0048756D /* HomeViewModel.swift in Sources */,
