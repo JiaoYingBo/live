@@ -25,6 +25,7 @@
 		0EE2E0C01F793F580048756D /* KingfisherExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0BF1F793F580048756D /* KingfisherExtension.swift */; };
 		0EE2E0C31F7940D60048756D /* HomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0C11F7940D60048756D /* HomeViewCell.swift */; };
 		0EE2E0C41F7940D60048756D /* HomeViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EE2E0C21F7940D60048756D /* HomeViewCell.xib */; };
+		0EE2E0CA1F7BCDED0048756D /* RoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0C91F7BCDED0048756D /* RoomViewController.swift */; };
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		0EE2E0BF1F793F580048756D /* KingfisherExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingfisherExtension.swift; sourceTree = "<group>"; };
 		0EE2E0C11F7940D60048756D /* HomeViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCell.swift; sourceTree = "<group>"; };
 		0EE2E0C21F7940D60048756D /* HomeViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewCell.xib; sourceTree = "<group>"; };
+		0EE2E0C91F7BCDED0048756D /* RoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomViewController.swift; sourceTree = "<group>"; };
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +147,38 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		0EE2E0C51F7BCD960048756D /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0C81F7BCDC00048756D /* Controller */,
+				0EE2E0C61F7BCDC00048756D /* Model */,
+				0EE2E0C71F7BCDC00048756D /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		0EE2E0C61F7BCDC00048756D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0EE2E0C71F7BCDC00048756D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0EE2E0C81F7BCDC00048756D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EE2E0C91F7BCDED0048756D /* RoomViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		0EF39FD71F738E9C0066A092 = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				0EF39FFD1F73992D0066A092 /* Main */,
+				0EE2E0C51F7BCD960048756D /* Live */,
 				0EF3A0031F73A2850066A092 /* Home */,
 				0EF3A00F1F73AA740066A092 /* Rank */,
 				0EF3A0101F73AA7A0066A092 /* Discover */,
@@ -479,6 +514,7 @@
 				0EF3A0021F739D520066A092 /* BaseNavigationController.swift in Sources */,
 				0EE2E0AF1F779F010048756D /* STTitleStyle.swift in Sources */,
 				0EE2E0981F779D830048756D /* DiscoverViewController.swift in Sources */,
+				0EE2E0CA1F7BCDED0048756D /* RoomViewController.swift in Sources */,
 				0EE2E08F1F775D490048756D /* HomeType.swift in Sources */,
 				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
 				0EE2E0C31F7940D60048756D /* HomeViewCell.swift in Sources */,
