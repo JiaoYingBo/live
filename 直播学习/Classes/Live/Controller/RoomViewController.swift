@@ -12,26 +12,40 @@ class RoomViewController: BaseViewController {
 
     var anchor : AnchorModel?
     
+    fileprivate lazy var closeBtn: UIButton = {
+        let btn = UIButton(type: UIButtonType.custom)
+        btn.frame = CGRect(x: kScreenW-60, y: 20, width: 50, height: 50)
+        btn.setImage(UIImage(named: "menu_btn_close"), for: UIControlState.normal)
+        btn.addTarget(self, action: #selector(closeClick), for: UIControlEvents.touchUpInside)
+        return btn
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        setupUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
-    */
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+}
 
+extension RoomViewController {
+    fileprivate func setupUI() {
+        view.backgroundColor = UIColor.lightGray
+        view.addSubview(closeBtn)
+    }
+}
+
+extension RoomViewController {
+    @objc fileprivate func closeClick() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

@@ -260,9 +260,9 @@
 		0EF3A0031F73A2850066A092 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				0EF3A0081F73A5680066A092 /* Controller */,
 				0EE2E0B31F77A3E70048756D /* Other */,
 				0EE2E08D1F775D3A0048756D /* Model */,
-				0EF3A0081F73A5680066A092 /* Controller */,
 				0EF3A0171F73BB440066A092 /* View */,
 			);
 			path = Home;
