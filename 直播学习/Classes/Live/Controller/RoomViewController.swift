@@ -20,6 +20,11 @@ class RoomViewController: BaseViewController {
         return btn
     }()
     
+    fileprivate lazy var toolView: RoomToolView = {
+        let tool = RoomToolView(frame: CGRect(x: 0, y: kScreenH - 50, width: kScreenW, height: 50))
+        return tool
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -41,6 +46,7 @@ extension RoomViewController {
     fileprivate func setupUI() {
         view.backgroundColor = UIColor.lightGray
         view.addSubview(closeBtn)
+        view.addSubview(toolView)
     }
 }
 

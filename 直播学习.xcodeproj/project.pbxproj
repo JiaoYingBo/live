@@ -31,6 +31,7 @@
 		0EE2E0DF1F7D48CB0048756D /* STTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0D91F7D48CB0048756D /* STTitleView.swift */; };
 		0EE2E0E21F7D4AA10048756D /* Emitterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0E11F7D4AA10048756D /* Emitterable.swift */; };
 		0EE2E0E41F7D4B440048756D /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0E31F7D4B440048756D /* NibLoadable.swift */; };
+		0EE2E0E61F7E883D0048756D /* RoomToolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE2E0E51F7E883D0048756D /* RoomToolView.swift */; };
 		0EF39FE41F738E9C0066A092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF39FE31F738E9C0066A092 /* AppDelegate.swift */; };
 		0EF39FE91F738E9C0066A092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FE71F738E9C0066A092 /* Main.storyboard */; };
 		0EF39FEB1F738E9C0066A092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EF39FEA1F738E9C0066A092 /* Assets.xcassets */; };
@@ -70,6 +71,7 @@
 		0EE2E0D91F7D48CB0048756D /* STTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = STTitleView.swift; sourceTree = "<group>"; };
 		0EE2E0E11F7D4AA10048756D /* Emitterable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emitterable.swift; sourceTree = "<group>"; };
 		0EE2E0E31F7D4B440048756D /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		0EE2E0E51F7E883D0048756D /* RoomToolView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoomToolView.swift; sourceTree = "<group>"; };
 		0EF39FE01F738E9C0066A092 /* 直播学习.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "直播学习.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EF39FE31F738E9C0066A092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EF39FE81F738E9C0066A092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		0EE2E0C71F7BCDC00048756D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0EE2E0E51F7E883D0048756D /* RoomToolView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -541,6 +544,7 @@
 				0EE2E0CA1F7BCDED0048756D /* RoomViewController.swift in Sources */,
 				0EE2E08F1F775D490048756D /* HomeType.swift in Sources */,
 				0EF3A0161F73AAD10066A092 /* RankViewController.swift in Sources */,
+				0EE2E0E61F7E883D0048756D /* RoomToolView.swift in Sources */,
 				0EE2E0C31F7940D60048756D /* HomeViewCell.swift in Sources */,
 				0EE2E0B71F77A7ED0048756D /* HomeViewModel.swift in Sources */,
 				0EE2E0DA1F7D48CB0048756D /* STContentView.swift in Sources */,
