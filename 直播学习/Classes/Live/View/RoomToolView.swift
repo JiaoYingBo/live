@@ -78,15 +78,5 @@ extension RoomToolView {
 extension RoomToolView {
     @objc func btnClick(btn: UIButton) {
         btnClickBlock?(btn)
-        switch btn.tag {
-        case 0:
-            print("聊天")
-        case 1:
-            print("礼物")
-        case 2:
-            print("点赞")
-        default:
-            fatalError("未处理按钮")
-        }
     }
 }

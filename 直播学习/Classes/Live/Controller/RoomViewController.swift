@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoomViewController: BaseViewController {
+class RoomViewController: BaseViewController, Emitterable {
 
     var anchor : AnchorModel?
     
@@ -22,10 +22,10 @@ class RoomViewController: BaseViewController {
     
     fileprivate lazy var toolView: RoomToolView = {
         let tool = RoomToolView(frame: CGRect(x: 0, y: kScreenH - 50, width: kScreenW, height: 50))
-        // 官方推荐使用[weak self]的方式去弱引用，需要注意解包
-        tool.btnClickBlock = { [weak self](button: UIButton) ->() in
-            print("----->\(button.tag, self?.view, self)")
-        }
+//        tool.btnClickBlock = { [weak self](button: UIButton) ->() in
+//            print("----->\(button.tag, self?.view, self)")
+//            // 在这里无法调用协议里的方法
+//        }
         return tool
     }()
     
@@ -55,6 +55,22 @@ extension RoomViewController {
         view.backgroundColor = UIColor.lightGray
         view.addSubview(closeBtn)
         view.addSubview(toolView)
+        
+        // 官方推荐使用[weak self]的方式去弱引用，需要注意解包
+        toolView.btnClickBlock = { [weak self](button: UIButton) -> () in
+            switch button.tag {
+            case 0:
+                print("聊天")
+            case 1:
+                print("礼物")
+            case 2:
+                button.isSelected = !button.isSelected
+                let point = CGPoint(x: button.center.x, y: self!.view.bounds.height - button.bounds.height * 0.5)
+                button.isSelected ? self?.startEmittering(point) : self?.stopEmittering()
+            default:
+                fatalError("未处理按钮")
+            }
+        }
     }
 }
 
