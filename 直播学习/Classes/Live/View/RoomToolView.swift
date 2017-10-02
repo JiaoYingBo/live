@@ -13,7 +13,7 @@ class RoomToolView: UIView {
     
     fileprivate lazy var chartBtn: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.tag = 1
+        btn.tag = 0
         btn.setImage(UIImage(named: "room_btn_chat"), for: .normal)
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         return btn
@@ -21,7 +21,7 @@ class RoomToolView: UIView {
     
     fileprivate lazy var giftBtn: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.tag = 2
+        btn.tag = 1
         btn.setImage(UIImage(named: "room_btn_gift"), for: .normal)
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         return btn
@@ -29,7 +29,7 @@ class RoomToolView: UIView {
     
     fileprivate lazy var likeBtn: UIButton = {
         let btn = UIButton(type: UIButtonType.custom)
-        btn.tag = 3
+        btn.tag = 2
         btn.setImage(UIImage(named: "room_btn_qfstar"), for: .normal)
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         return btn
@@ -70,6 +70,15 @@ extension RoomToolView {
 
 extension RoomToolView {
     @objc func btnClick(btn: UIButton) {
-        print(btn.tag)
+        switch btn.tag {
+        case 0:
+            print("聊天")
+        case 1:
+            print("礼物")
+        case 2:
+            print("点赞")
+        default:
+            fatalError("未处理按钮")
+        }
     }
 }
