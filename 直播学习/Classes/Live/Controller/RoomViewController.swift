@@ -22,6 +22,10 @@ class RoomViewController: BaseViewController {
     
     fileprivate lazy var toolView: RoomToolView = {
         let tool = RoomToolView(frame: CGRect(x: 0, y: kScreenH - 50, width: kScreenW, height: 50))
+        // 官方推荐使用[weak self]的方式去弱引用，需要注意解包
+        tool.btnClickBlock = { [weak self](button: UIButton) ->() in
+            print("----->\(button.tag, self?.view, self)")
+        }
         return tool
     }()
     
@@ -39,6 +43,10 @@ class RoomViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+    
+    deinit {
+        print("RoomViewController deinit")
     }
 }
 

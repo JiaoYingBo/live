@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 
+typealias roomBtnClick = (UIButton) ->()
+
 class RoomToolView: UIView {
     
     fileprivate lazy var chartBtn: UIButton = {
@@ -34,6 +36,8 @@ class RoomToolView: UIView {
         btn.addTarget(self, action: #selector(btnClick), for: .touchUpInside)
         return btn
     }()
+    
+    var btnClickBlock: roomBtnClick?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -43,7 +47,10 @@ class RoomToolView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
+    
+    deinit {
+        print("RoomToolView deinit")
+    }
 }
 
 extension RoomToolView {
@@ -70,6 +77,7 @@ extension RoomToolView {
 
 extension RoomToolView {
     @objc func btnClick(btn: UIButton) {
+        btnClickBlock?(btn)
         switch btn.tag {
         case 0:
             print("聊天")
