@@ -14,6 +14,7 @@ class BaseNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // 修改系统手势
+        // 注意：这种方法有许多坑，实际项目中慎用 http://www.jianshu.com/p/2cb97095b6f0
         guard let targets = interactivePopGestureRecognizer!.value(forKey:  "_targets") as? [NSObject] else { return }
         let targetObjc = targets[0]
         let target = targetObjc.value(forKey: "target")
