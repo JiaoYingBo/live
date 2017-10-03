@@ -13,7 +13,14 @@ class BaseNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // 修改系统手势
+        guard let targets = interactivePopGestureRecognizer!.value(forKey:  "_targets") as? [NSObject] else { return }
+        let targetObjc = targets[0]
+        let target = targetObjc.value(forKey: "target")
+        let action = Selector(("handleNavigationTransition:"))
+        
+        let panGes = UIPanGestureRecognizer(target: target, action: action)
+        view.addGestureRecognizer(panGes)
     }
     
     override func pushViewController(_ viewController: UIViewController, animated: Bool) {
@@ -22,4 +29,5 @@ class BaseNavigationController: UINavigationController {
         }
         super.pushViewController(viewController, animated: animated)
     }
+    
 }
