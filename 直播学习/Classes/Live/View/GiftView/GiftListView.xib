@@ -11,24 +11,25 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GiftListView" customModule="直播学习" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="320"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANH-m0-vEL">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="赠给：主播" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIX-2g-jei">
-                    <rect key="frame" x="10" y="167" width="76.5" height="18"/>
+                    <rect key="frame" x="10" y="287" width="76.5" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-yG-7Zt">
-                    <rect key="frame" x="305" y="161" width="60" height="29"/>
+                    <rect key="frame" x="305" y="281" width="60" height="30"/>
                     <color key="backgroundColor" red="1" green="0.61081790822170201" blue="0.24813730582715998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="60" id="Pnp-Wr-12L"/>
+                        <constraint firstAttribute="height" constant="30" id="O4o-np-gmk"/>
+                        <constraint firstAttribute="width" constant="60" id="eUc-G6-Ke6"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                     <state key="normal" title="赠送">
@@ -41,15 +42,14 @@
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="oIX-2g-jei" firstAttribute="centerY" secondItem="vGn-yG-7Zt" secondAttribute="centerY" id="8d6-IH-7xt"/>
-                <constraint firstItem="ANH-m0-vEL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Gzv-GX-1Wf"/>
-                <constraint firstAttribute="trailing" secondItem="vGn-yG-7Zt" secondAttribute="trailing" constant="10" id="RRs-5e-Bcf"/>
-                <constraint firstAttribute="bottom" secondItem="vGn-yG-7Zt" secondAttribute="bottom" constant="10" id="XZ1-nR-5wv"/>
-                <constraint firstAttribute="trailing" secondItem="ANH-m0-vEL" secondAttribute="trailing" id="iNs-FN-y7X"/>
-                <constraint firstItem="vGn-yG-7Zt" firstAttribute="top" secondItem="ANH-m0-vEL" secondAttribute="bottom" constant="-52" id="kCU-pU-CVo"/>
-                <constraint firstAttribute="bottom" secondItem="ANH-m0-vEL" secondAttribute="bottom" constant="-13" id="ofw-qM-WCM"/>
-                <constraint firstItem="ANH-m0-vEL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rOM-oy-I8F"/>
-                <constraint firstItem="oIX-2g-jei" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ySj-aR-XqP"/>
+                <constraint firstAttribute="trailing" secondItem="ANH-m0-vEL" secondAttribute="trailing" id="0Gc-SG-JAL"/>
+                <constraint firstItem="ANH-m0-vEL" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CPW-x8-J6u"/>
+                <constraint firstItem="oIX-2g-jei" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="LDv-xX-m24"/>
+                <constraint firstItem="oIX-2g-jei" firstAttribute="centerY" secondItem="vGn-yG-7Zt" secondAttribute="centerY" id="Orb-wy-9xG"/>
+                <constraint firstItem="vGn-yG-7Zt" firstAttribute="top" secondItem="ANH-m0-vEL" secondAttribute="bottom" constant="5" id="VqS-XO-hoM"/>
+                <constraint firstAttribute="trailing" secondItem="vGn-yG-7Zt" secondAttribute="trailing" constant="10" id="hAR-Ce-pWg"/>
+                <constraint firstAttribute="bottom" secondItem="ANH-m0-vEL" secondAttribute="bottom" constant="44" id="nuu-um-biv"/>
+                <constraint firstItem="ANH-m0-vEL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rmT-DA-F4h"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

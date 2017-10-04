@@ -38,8 +38,7 @@ extension GiftListView {
         setupGiftView()
     }
     
-    //MARK: 一个问题是xib拖的view在初始化时是跟xib一样大小的，导致内部控件不能跟随变化
-    //MARK: 另一个问题是titleview第一个label点击bug
+    //MARK: 一个问题是xib拖的view在初始化时是跟xib一样大小的，导致内部控件不能跟随变化，如下面的pageCollectionView
     fileprivate func setupGiftView() {
         let style = STTitleStyle()
         style.isScrollEnable = false
