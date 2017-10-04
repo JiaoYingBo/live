@@ -25,7 +25,7 @@ extension Emitterable where Self : UIViewController {
         
         // 4.创建例子, 并且设置例子相关的属性
         var cells = [CAEmitterCell]()
-        for i in 0..<10 {
+        for i in 0..<8 {
             // 4.1.创建例子Cell
             let cell = CAEmitterCell()
             
@@ -49,7 +49,7 @@ extension Emitterable where Self : UIViewController {
             cell.spin = CGFloat(Double.pi / 2)
             cell.spinRange = CGFloat(Double.pi / 2 / 2)
             
-            // 4.6.设置例子每秒弹出的个数
+            // 4.6.设置粒子每秒弹出的个数
             cell.birthRate = 2
             
             // 4.7.设置粒子展示的图片
