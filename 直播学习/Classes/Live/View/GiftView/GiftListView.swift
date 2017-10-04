@@ -31,11 +31,6 @@ class GiftListView: UIView, NibLoadable {
         setupGiftView()
         loadGiftData()
     }
-    
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        setupGiftView()
-    }
 }
 
 extension GiftListView {
@@ -43,6 +38,8 @@ extension GiftListView {
         setupGiftView()
     }
     
+    //MARK: 一个问题是xib拖的view在初始化时是跟xib一样大小的，导致内部控件不能跟随变化
+    //MARK: 另一个问题是titleview第一个label点击bug
     fileprivate func setupGiftView() {
         let style = STTitleStyle()
         style.isScrollEnable = false
