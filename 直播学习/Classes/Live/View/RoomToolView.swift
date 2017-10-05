@@ -78,5 +78,11 @@ extension RoomToolView {
 extension RoomToolView {
     @objc func btnClick(btn: UIButton) {
         btnClickBlock?(btn)
+        /*
+        // 也可以这样写
+        if let btnClickBlock = btnClickBlock {
+            btnClickBlock(btn)
+        }
+        */
     }
 }
