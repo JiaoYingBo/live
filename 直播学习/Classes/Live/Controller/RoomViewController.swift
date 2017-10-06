@@ -113,21 +113,22 @@ extension RoomViewController {
     
     fileprivate func setupToolViewBlock() {
         // 官方推荐使用[weak self]的方式去弱引用，需要注意解包
-//        toolView.btnClickBlock = { [weak self](button: UIButton) -> () in
-//            switch button.tag {
-//            case 0:
-//                print("聊天")
-//            case 1:
-//                UIView.animate(withDuration: 0.25, animations: {
-//                    self?.giftListView.frame.origin.y = kScreenH - kGiftlistViewHeight
-//                })
-//            case 2:
-//                button.isSelected = !button.isSelected
-//                let point = CGPoint(x: button.center.x, y: self!.view.bounds.height - button.bounds.height * 0.5)
-//                button.isSelected ? self?.startEmittering(point) : self?.stopEmittering()
-//            default:
-//                fatalError("未处理按钮")
-//            }
-//        }
+        // [weak self](button: UIButton) -> () in 没有返回值时可以将 -> () 省略
+        toolView.btnClickBlock = { [weak self](button: UIButton) in
+            switch button.tag {
+            case 0:
+                print("聊天")
+            case 1:
+                UIView.animate(withDuration: 0.25, animations: {
+                    self?.giftListView.frame.origin.y = kScreenH - kGiftlistViewHeight
+                })
+            case 2:
+                button.isSelected = !button.isSelected
+                let point = CGPoint(x: button.center.x, y: self!.view.bounds.height - button.bounds.height * 0.5)
+                button.isSelected ? self?.startEmittering(point) : self?.stopEmittering()
+            default:
+                fatalError("未处理按钮")
+            }
+        }
     }
 }
