@@ -29,7 +29,4 @@ class NetworkTools {
             finishedCallback(result)
         }
     }
-    class func test() {
-        
-    }
 }
