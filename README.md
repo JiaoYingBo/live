@@ -1,5 +1,11 @@
 # live（直播项目）
-#### 技术要点
-* 首页多个栏目的控制器放在CollectionView上，可左右滚动可切换控制器，标题栏是单独封装的控件，通过代理与外界进行交互。
-* 瀑布流使用常规方式创建：自定义UICollectionViewFlowLayout，定义数据源方法获取item高度和列数，在prepare方法中计算出每个item的frame，重写-layoutAttributesForElements方法和-collectionViewContentSize方法，返回对应数据即可。
-* 采用MVVM模式，View中的数据绑定ViewModel，在Controller（View）中调用ViewModel进行网络请求，请求完毕刷新View。
+#### 直播技术要点
+1. 视频采集
+
+    视频采集可以使用系统的AVFoundation实现，包括图像采集和音频采集。设置`AVCaptureVideoDataOutput`和`AVCaptureAudioDataOutput`的代理，通过`-captureOutput:didOutputSampleBuffer:fromConnection:`代理方法可获取每一帧图像，设置`AVCaptureVideoPreviewLayer`为图像预览图层。
+    
+    也可以使用GPUImage采集。GPUImage有个`GPUImageVideoCamera`类用来做视频采集，可为它设置滤镜，采集时顺便进行滤镜处理，也可以设置代理获取`sampleBuffer`，预览图层使用`GPUImageView`。
+    
+2. 视频编码
+
+    录制出来的视频是非常大的，直接进行传出不太现实，所以要对视频进行编码压缩。iOS 8 之后可以使用系统的VideoToolBox进行基于GPU的硬编码，对`VTCompressionSessionRef`初始化并设置各项参数，如编码格式、输出帧率、码率、关键帧间隔等。目前最常用的编码格式是H.264，H.264定义了三种帧：I帧、P帧和B帧，I帧是完整的帧，PB帧都是预测帧；I帧采用帧内压缩，PB真采用帧间压缩。对采集到的`sampleBuffer`
