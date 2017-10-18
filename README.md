@@ -17,10 +17,12 @@
    
     使用`VTCompressionSessionRef`对采集到的`sampleBuffer`进行H.264编码，并写入NALU进行数据存储和传输。若要支持 iOS 7，需要使用FFmpeg+X264库进行软编码。音频数据进行ACC编码。
     
+    
 3. 推流
 
     推流前需要把数据进行封装，封装成FLV格式的视频，然后通过RTMP协议进行推流，使用开源库[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)可进行推流。
     
+    
 4. 拉流
 
     拉流播放可使用开源库[ijkPlayer](https://github.com/Bilibili/ijkplayer)。
