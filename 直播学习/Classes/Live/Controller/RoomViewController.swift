@@ -45,7 +45,7 @@ class RoomViewController: BaseViewController, Emitterable {
     
     fileprivate var ijkPlayer: IJKFFMoviePlayerController?
     
-    // MARK:-
+    // MARK:
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -101,7 +101,7 @@ extension RoomViewController {
     }
 }
 
-// MARK:- 请求主播信息
+// MARK: 请求主播信息
 extension RoomViewController {
     fileprivate func loadAnchorLiveAddress() {
         
